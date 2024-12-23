@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+h1{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    padding: 10px ;
+    margin: 0;
+}
+.container{
+    display: flex;
+    flex-grow: 1;
+}
+.side-panel{
+    width: 20%;
+    background-color:black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-list{
+    flex-grow: 1;
+    overflow-y:hidden;
+    margin-bottom: 20px;
+}
+
+.add-project{
+    margin: 25px 50px;
+    border: 2px solid white;
+    padding: 5px;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.main{
+    flex-grow: 1;
+    color: white;
+    background-color: gray;
+    padding: 20px;
+}
+.project-form{
+    background-color: steelblue;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+.project-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.project-form input,
+.project-form button {
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blurs the background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
