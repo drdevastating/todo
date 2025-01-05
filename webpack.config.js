@@ -9,6 +9,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'), // Output directory
     },
     mode: 'development', // Set mode to 'development' or 'production'
+    watch: true,
     devServer: {
         watchFiles: ["./src/template.html"],
     }, 
