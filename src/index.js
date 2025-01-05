@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded",()=>{
             const newProject = new Project(projectName,projectDueDate);
             projects.push(newProject);
 
+            const projectButton = document.createElement("button");
             const project = document.createElement("li");
             project.textContent = projectName;
 
@@ -87,7 +88,9 @@ document.addEventListener("DOMContentLoaded",()=>{
                 projectList = document.createElement("ol");
                 projList.appendChild(projectList);
             }
-            projectList.appendChild(project);
+            projectButton.classList.add("project-btn");
+            projectButton.appendChild(project)
+            projectList.appendChild(projectButton);
 
             overlay.remove();
         })
@@ -95,7 +98,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         overlay.addEventListener("click",function(event){
             if(!form.contains(event.target)) overlay.remove();
         });
-    })
-})
+    });
+});
 
 
